@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+#container {
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#image img{
+    width: 100%;
+    border-radius: 5px;
+}
+.simple h1 {
+    padding: 10px 0 ;
+    font-weight: 500;
+}
+.simple-size-color p,
+.simple-size-color li,
+.simple-size-color td{
+    font-size: 12px;
+    font-family: 'Outfit';
+    font-weight: 400;
+    color: hsl(30, 10%, 34%)
+}
+.simple-size-color li span {
+    font-weight: bold;
+}
+#preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.prep-time {
+    font-weight: bold;
+    font-family: outfit;
+    color: hsl(332, 51%, 32%);
+}
+#preparation ul {
+    margin: 10px 15px 0;
+}
+#ingredients ul,
+#instructions ol {
+    margin: 10px 15px 0;
+}
+li {
+    padding: 5px 0;
+}
+#instructions li {
+    padding-left: 10px;
+}
+#ingredients ,
+#instructions {
+    padding: 10px 0 15px;
+    border-bottom: 1px solid;
+}
+#nutrition table{
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+    border-collapse: collapse;
+}
+#nutrition table tr {
+    padding: 500px 0;
+    border-bottom: 1px solid black;
+} 
+#nutrition tr td {
+    padding: 10px;
+    padding-left: 10px;
+
+}
+#nutrition table td:nth-child(2) {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+}
+#nutrition h2 {
+    padding: 10px 0;
+}
+h2 {
+    font-family: 'young serif';
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+}
+h1 {
+    font-family: 'young serif';
+}
+ul {
+    list-style-type: disc;
+}
+ul li::marker,
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    #container {
+        width: 100%; 
+        padding: 10px; 
+        max-width: 100%; 
+    }
+}
